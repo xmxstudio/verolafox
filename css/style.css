@@ -1,0 +1,103 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body {
+  display: flex;
+  background-color: gray;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.pokeCard {
+  display: flex;
+  font-size: 20px;
+  background-color: white;
+  box-shadow: 20px 20px rgba(27, 92, 214, 0.514);
+  width: 50vw;
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  object-fit: contain;
+}
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+.pokeLogo > img {
+  height: 15vh;
+}
+.pokeLogo {
+  margin: 50px;
+}
+.pokeButton {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  font-size: 10pt;
+  color: yellow;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px #000, 2px 2px #000;
+  /* color: #fff; */
+  text-shadow: 2px 2px #003cff;
+  background-color: #fff;
+  transition: all 0.3s;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0);
+  background: url(https://i.ebayimg.com/images/g/YrIAAOSwAVlb10aL/s-l300.jpg);
+  background-size: contain;
+}
+.pokeButton:hover {
+  margin: -2px;
+  height: 102px;
+  width: 102px;
+  line-height: 1.2em;
+  font-size: 13.2pt;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+input {
+  background-color: rgb(175, 174, 174);
+  box-shadow: 2px 2px rgb(173, 83, 83);
+  height: 5vh;
+}
+
+
+.pokeType{
+  display: flex;
+}
+.pokeDiv{
+  margin-top: 20px;
+  opacity: 0;
+  animation: 0.2s forwards animateImgIn;
+}
+
+@keyframes animateImgIn {
+  from  {
+    opacity: 0;
+    margin-top: 20px
+  }
+  to{
+    opacity: 1;
+    margin-top: 0px
+  }
+}
